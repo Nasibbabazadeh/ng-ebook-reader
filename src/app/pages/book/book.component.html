@@ -1,3 +1,12 @@
 @if (this.loading) {
-<h2>Loading data...</h2>
+<app-spinner message="Kitablar yüklənir ..." />
+
 }
+<div class="books-container">
+    @for (book of booksData; track book.id) {
+    <div class="book-card">
+        <h2>{{ book.title }}</h2>
+    </div>
+    }
+
+</div>

@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { GenericService } from './generic.service';
 import { Observable } from 'rxjs';
-import { IBook } from '../shared/models/book.model';
+import { IBook, IBookResponse } from '../shared/models/book.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class BookService {
   private readonly _endpoint: string = 'books';
-  constructor(private _genericService: GenericService) {}
+  constructor(private _genericService: GenericService) { }
 
-  getAllBooks(): Observable<IBook[]> {
+  getAllBooks(): Observable<IBookResponse> {
     return this._genericService.get(this._endpoint);
   }
 
