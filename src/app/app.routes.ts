@@ -11,6 +11,7 @@ export const routes: Routes = [
       {
         path: '',
         component: HomeComponent,
+        title: 'e-book',
       },
       {
         path: 'book',
