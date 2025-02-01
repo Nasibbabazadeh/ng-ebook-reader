@@ -8,7 +8,7 @@ import { IBook, IBookResponse } from '../shared/models/book.model';
 })
 export class BookService {
   private readonly _endpoint: string = 'books';
-  constructor(private _genericService: GenericService) { }
+  constructor(private _genericService: GenericService) {}
 
   getAllBooks(): Observable<IBookResponse> {
     return this._genericService.get(this._endpoint);

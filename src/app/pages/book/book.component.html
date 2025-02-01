@@ -3,10 +3,17 @@
 
 }
 <div class="books-container">
-    @for (book of booksData; track book.id) {
-    <div class="book-card">
-        <h2>{{ book.title }}</h2>
+  @for (book of booksData; track book.id) {
+  <div class="book-card">
+    <img [src]="book.formats['image/jpeg']" alt="Book Cover" />
+    <div class="book-title">{{ book.title }}</div>
+    <div class="book-author">{{ book.authors[0].name }}</div>
+    <p class="book-summary">
+      {{ book.summaries[0] }}
+    </p>
+    <div class="book-links">
+      <a href="https://www.gutenberg.org/ebooks/25558">Read More</a>
     </div>
-    }
-
+  </div>
+  }
 </div>

@@ -1,24 +1,55 @@
-<header>
-  <div class="logo">E-Reader</div>
-  <nav class="nav-links">
-    <a href="#">Home</a>
-    <a href="#">Library</a>
-    <a href="#">Profile</a>
-  </nav>
-  <div class="search-box">
-    <input type="text" placeholder="Search books..." />
+<!-- header section -->
+<header class="header">
+  <div class="header__wrapper">
+    <div class="header__company">
+      <div class="company__logo"></div>
+      <h1 class="company__name">
+        NETH <br />
+        BOOKPOINT
+      </h1>
+    </div>
+
+    <nav class="header__navbar">
+      <ul class="header__listing">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Delivery Team</a></li>
+        <li><a href="">Sellers</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
-
+<!-- main outlet -->
 <main>
-  <router-outlet></router-outlet>
+  <router-outlet />
 </main>
 
-<footer>
-  <div class="footer-links">
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Service</a>
-    <a href="#">Contact Us</a>
+<!-- footer section -->
+<footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__company">
+      <div class="company__logo"></div>
+      <h2 class="company__name">NETH BOOKPOINT</h2>
+    </div>
+
+    <nav class="footer__navbar">
+      <ul class="footer__listing">
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Terms of Service</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__social">
+      <a href="#" class="social__link">Facebook</a>
+      <a href="#" class="social__link">Twitter</a>
+      <a href="#" class="social__link">Instagram</a>
+    </div>
+
+    <p class="footer__copyright">
+      &copy; 2025 NETH BOOKPOINT. All Rights Reserved.
+    </p>
   </div>
-  <p>&copy; 2025 E-Reader. All rights reserved.</p>
 </footer>
